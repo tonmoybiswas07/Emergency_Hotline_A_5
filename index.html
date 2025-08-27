@@ -24,9 +24,11 @@
   </head>
   <body class="hind-madurai-font">
     <!-- navbar section start here -->
-    <header class="header flex justify-between items-center pl-7 mt-8">
+    <header
+      class="header flex justify-between items-center gap-5 flex-col md:flex-row md:items-center pl-7 mt-8"
+    >
       <!-- navbar left -->
-      <div class="header-left-section flex items-center gap-4">
+      <div class="header-left-section flex items-center md:gap-4">
         <img src="./images/logo.png" class="h-[60px] w-[60px]" alt="logo" />
         <h1 class="text-2xl text-[#006747] font-bold">
           Emergency <br />
@@ -34,10 +36,12 @@
         </h1>
       </div>
       <!-- navbar right -->
-      <div class="header-right-section flex items-center pr-7 gap-10">
+      <div
+        class="header-right-section flex items-center gap-2 md:pr-7 md:gap-10"
+      >
         <!-- heart btn -->
         <div
-          class="flex items-center justify-center gap-5 bg-[#41ff6b1a] h-[52px] w-[120px] rounded-full font-bold text-2xl"
+          class="flex items-center justify-center gap-2 md:gap-5 bg-[#41ff6b1a] h-[52px] w-[80px] md:w-[120px] rounded-full font-bold text-2xl"
         >
           <span>0</span
           ><img
@@ -48,7 +52,7 @@
           <!-- coin btn -->
         </div>
         <div
-          class="flex items-center justify-center gap-5 bg-[#41ff6b1a] h-[52px] w-[120px] rounded-full font-bold text-2xl"
+          class="flex items-center justify-center gap-5 bg-[#41ff6b1a] h-[52px] w-[80px] md:w-[120px] rounded-full font-bold text-2xl"
         >
           <span>100</span
           ><img
@@ -59,7 +63,7 @@
           <!-- copy btn -->
         </div>
         <div
-          class="flex items-center justify-center h-[52px] w-[120px] rounded-full font-bold text-2xl text-white bg-[#00a63e]"
+          class="flex items-center justify-center h-[52px] w-[100px] md:w-[120px] rounded-full font-bold text-2xl text-white bg-[#00a63e]"
         >
           <span> 0 </span>
           <h1 class="ml-2">Copy</h1>
@@ -78,8 +82,10 @@
             class="m-auto h-[100px] w-[100px]"
             alt=""
           />
-          <h1 class="font-bold text-[40px]">Emergency Service Directory</h1>
-          <p class="text-[20px]">
+          <h1 class="font-bold text-2xl md:text-[40px]">
+            Emergency Service Directory
+          </h1>
+          <p class="text-[12px] md:text-[20px]">
             Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
           </p>
@@ -89,10 +95,12 @@
       <!-- card section starts here -->
       <section class="emergency-number-card-section bg-[#41ff6b1a] pb-[100px]">
         <div
-          class="card-container w-11/12 m-auto grid grid-cols-12 gap-10 pt-8"
+          class="card-container md:w-11/12 m-auto grid grid-cols-1 md:grid-cols-12 gap-10 pt-8"
         >
           <!-- cards  -->
-          <section class="cards grid grid-cols-3 gap-4 col-span-9">
+          <section
+            class="cards grid grid-cols-1 md:grid-cols-3 gap-4 col-span-9"
+          >
             <!-- card 1 -->
             <div class="card bg-white rounded-xl shadow-xl p-5">
               <div class="flex justify-between items-center mb-4">
@@ -395,8 +403,17 @@
             </div>
           </section>
           <!-- card section end here -->
-          <aside class="history bg-white rounded-xl shadow-xl p-5 col-span-3">
-            <h1>history</h1>
+          <aside
+            class="history bg-white rounded-xl shadow-xl p-5 col-span-9 md:col-span-3"
+          >
+            <div class="history-nav-section flex justify-between items-center">
+              <h1 class="text-[18px] font-bold text-nowrap">Call History</h1>
+              <button
+                class="w-[100px] h-[42px] bg-[#00A63E] text-white font-bold rounded-full hover:bg-green-800 cursor-pointer"
+              >
+                Clear
+              </button>
+            </div>
           </aside>
         </div>
       </section>
