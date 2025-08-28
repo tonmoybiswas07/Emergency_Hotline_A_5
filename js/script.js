@@ -55,3 +55,17 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   const historyContainer = document.getElementById("history-container");
   historyContainer.innerHTML = "";
 });
+// copy section
+const copyButton = document.getElementsByClassName("copy-button");
+for (const button of copyButton) {
+  button.addEventListener("click", function () {
+    const cardNumber = button.parentNode.parentNode.children[3].innerText;
+    alert("The number has been copied:" + cardNumber);
+    const copyNumber = document.getElementById("copy-number").innerText;
+    const copyNumberConvert = parseInt(copyNumber);
+    const updateNumber = copyNumberConvert + 1;
+    document.getElementById("copy-number").innerText = updateNumber;
+    // number copy
+    navigator.clipboard.writeText(cardNumber);
+  });
+}

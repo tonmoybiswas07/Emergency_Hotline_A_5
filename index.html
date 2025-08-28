@@ -28,7 +28,7 @@
       class="header flex justify-between items-center gap-5 flex-col md:flex-row md:items-center pl-7 mt-8"
     >
       <!-- navbar left -->
-      <div class="header-left-section flex items-center md:gap-4">
+      <div class="header-left-section flex items-center gap-4 md:gap-4">
         <img src="./images/logo.png" class="h-[60px] w-[60px]" alt="logo" />
         <h1 class="text-2xl text-[#006747] font-bold">
           Emergency <br />
@@ -65,7 +65,7 @@
         <div
           class="flex items-center justify-center h-[52px] w-[100px] md:w-[120px] rounded-full font-bold text-2xl text-white bg-[#00a63e]"
         >
-          <span> 0 </span>
+          <span id="copy-number"> 0 </span>
           <h1 class="ml-2">Copy</h1>
         </div>
       </div>
@@ -99,7 +99,7 @@
         >
           <!-- cards  -->
           <section
-            class="cards grid grid-cols-1 md:grid-cols-3 gap-4 col-span-9"
+            class="cards grid grid-cols-1 m-3 md:m-0 md:grid-cols-3 gap-5 col-span-9"
           >
             <!-- card 1 -->
             <div class="card bg-white rounded-xl shadow-xl p-5">
@@ -126,7 +126,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -161,7 +161,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -196,7 +196,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -231,7 +231,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -268,7 +268,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -303,7 +303,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -338,7 +338,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -373,7 +373,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -408,7 +408,7 @@
               </p>
               <div class="flex gap-3">
                 <button
-                  class="w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
+                  class="copy-button w-[180px] h-[40px] border-1 border-gray-300 rounded-lg hover:bg-gray-300 text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
@@ -423,7 +423,7 @@
           <!-- card section end here -->
           <!-- aside section start here -->
           <aside
-            class="history bg-white rounded-xl shadow-xl p-5 col-span-9 md:col-span-3"
+            class="history bg-white rounded-xl shadow-xl p-5 col-span-9 m-3 md:m-0 md:col-span-3"
           >
             <div class="history-nav-section flex justify-between items-center">
               <h1 class="text-[18px] font-bold text-nowrap">
