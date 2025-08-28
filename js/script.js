@@ -10,6 +10,7 @@ for (const icon of heartIcon) {
 }
 
 // call btn function
+
 const time = new Date().toLocaleTimeString();
 
 const callbtns = document.getElementsByClassName("call-button");
@@ -43,7 +44,7 @@ for (const button of callbtns) {
                   <h2 class="font-bold mb-2">${cardTitle}</h2>
                   <p> ${cardNumber} </p>
                 </div>
-                <p class="text-nowrap"> ${time} </span> AM</p>
+                <p class="text-nowrap">${time} </span> AM</p>
               </div>
     `;
     historyContainer.append(div);
