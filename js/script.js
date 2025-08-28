@@ -3,7 +3,7 @@ const heartIcon = document.getElementsByClassName("heart-icon");
 for (const icon of heartIcon) {
   icon.addEventListener("click", function () {
     const heartNumber = document.getElementById("heart-number").innerText;
-    console.log(heartNumber);
+
     const totalOfHeartNumbers = Number(heartNumber) + 1;
     document.getElementById("heart-number").innerText = totalOfHeartNumbers;
   });
